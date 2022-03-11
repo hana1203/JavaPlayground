@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class GugudanMain {
     public static void main(String[] args) {
-        ////Q1. 사용자가 입력한 값에 따 구구단을 계산해 출력 ex) 19 입력시 2*1에서 19*19까지 출력.
+//        //Q1. 사용자가 입력한 값에따라 그 구구단 단수를 그 숫자 줄까지 출력 ex) 4입력시 4*1=4 부터 4*4=16 까지.
 //        Scanner scan = new Scanner(System.in);
 //        System.out.println("구구단 몇단? 똑같은 구구단 단 수의 길이만큼 출력해줌");
 //        int dan = scan.nextInt();
 //        GugudanMethod.calculate(dan);
-        ////
+//        //
 
         ////Q2. 사용자가 입력한 두 값에 따라 구구단 몇단을 몇 줄까지 출력
         Scanner scan = new Scanner(System.in);

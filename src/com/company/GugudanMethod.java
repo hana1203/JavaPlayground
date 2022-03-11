@@ -8,13 +8,13 @@ public class GugudanMethod {
 //    ////Q1. 사용자가 입력한 값에 따른 구구단을 계산해 출력
 //        public static int[] calculate(int dan){
 //            int[] result = new int[dan];
-//    ////
 //
 //        for (int i =0; i < result.length; i++){
 //            result[i] = dan * (i+1);
 //            System.out.println(dan + "x" + (i+1) + " = " +result[i]);
 //        }
 //        return result;
+//    ////
 
         ////Q2. 사용자가 입력한 두 값에 따라 구구단 몇단을 몇 줄까지 출력
         public static int[] calculate(int first, int second){
@@ -26,6 +26,7 @@ public class GugudanMethod {
                 }
             }
             return result;
+        ////
     }
 
 // 클래스 분리를 위해서 주석처리
