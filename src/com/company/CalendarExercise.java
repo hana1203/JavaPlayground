@@ -26,15 +26,17 @@ public class CalendarExercise {
 
     public void PrintCalendar(int year, int month){
         System.out.printf(" <<%2d년 %2d월>>", year, month);
+        System.out.println();
         System.out.println("일 월 화 수 목 금 토");
         System.out.println("--------------------");
         int numOfMaxDays = getMaxDays(year, month);
-        for (int i=0; i<numOfMaxDays; i++) {
-            System.out.printf("%2d",i);
+        for (int i=1; i<=numOfMaxDays; i++) {
+            System.out.printf("%3d",i);
             if (i%7 ==0) {
                 System.out.println();
             }
         }
+        System.out.println();
     }
 
 
