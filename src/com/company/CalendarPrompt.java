@@ -2,9 +2,9 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Prompt {
+public class CalendarPrompt {
     public static void main(String[] args) {
-        Prompt p = new Prompt();
+        CalendarPrompt p = new CalendarPrompt();
         p.runPrompt();
     }
 

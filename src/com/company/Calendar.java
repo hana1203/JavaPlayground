@@ -16,7 +16,7 @@ public class Calendar {
         if (isLeapYear(year)){
             return leapyearDays[month-1];
         } else {
-            return numDays[month - 1];
+            return numDays[month-1];
         }
     }
 
@@ -25,7 +25,7 @@ public class Calendar {
         System.out.printf("  <<%3d %3d>>\n", year, month);
         System.out.println("일 월 화 수 목 금 토");
         System.out.println("--------------------");
-        int numDays = getNumdaysOfMonth(year, month);
+        int numDays = getNumdaysOfMonth(year,  month);
         for (int i =1; i <= numDays; i++){
             System.out.printf("%3d",i);
             if (i % 7 ==0){
