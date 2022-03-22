@@ -1,5 +1,4 @@
 package com.company;
-import java.util.Scanner;
 
 public class Calendar {
 
@@ -20,18 +19,46 @@ public class Calendar {
         }
     }
 
-    //캘린더 출력하기
-    public void printCalendar(int year, int month) {
+//    //캘린더 출력하기
+//    public void printCalendar(int year, int month) {
+//        System.out.printf("  <<%3d %3d>>\n", year, month);
+//        System.out.println("일 월 화 수 목 금 토");
+//        System.out.println("--------------------");
+//        int numDays = getNumdaysOfMonth(year,  month);
+//        for (int i =1; i <= numDays; i++){
+//            System.out.printf("%3d",i);
+//            if (i % 7 ==0){
+//                System.out.println();
+//            }
+//        }
+
+    //캘린더 출력하기 요일입력받은 이후.
+    public void printCalendar(int year, int month, int dayOfWeek) {
         System.out.printf("  <<%3d %3d>>\n", year, month);
         System.out.println("일 월 화 수 목 금 토");
         System.out.println("--------------------");
-        int numDays = getNumdaysOfMonth(year,  month);
-        for (int i =1; i <= numDays; i++){
-            System.out.printf("%3d",i);
-            if (i % 7 ==0){
+        int numDays = getNumdaysOfMonth(year, month);
+        int count = 7 - dayOfWeek;
+
+        //count변수는 일요일은 7개출력, 월요일 6개, 화요일 5개 ...
+        //여기서 dayOfWeek 변수는 화요일의 경우 2
+        //print blank space
+        for (int k=0; k < dayOfWeek; k++) {
+            System.out.printf("   "); //하루에 세칸 띄기 했으니까 빈칸 세칸 띄기.
+        }
+        //print first line
+        for (int j=1; j < count; j++){
+            System.out.printf("%3d", j);
+        }
+
+        //print second line to the end
+        for (int i=count; i <= numDays; i++){ //시작을 count 로 바꿈.
+            System.out.printf("%3d", i);
+            if (i % 7 ==count){
                 System.out.println();
             }
         }
+
 
 //        System.out.println(" 1  2  3  4  5  6  7\n 8  9 10 11 12 13 14\n15 16 17 18 19 20 21\n22 23 24 25 26 27 28\n");
     }
